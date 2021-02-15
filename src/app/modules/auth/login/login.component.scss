@@ -1,0 +1,18 @@
+.form-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    min-width: 500px;
+  }
+}
+
+mat-card {
+  padding: 1em;
+  flex: none;
+
+  mat-card-title, mat-form-field {
+    margin: 1em;
+  }
+}
