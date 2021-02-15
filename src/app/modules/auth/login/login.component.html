@@ -1,0 +1,20 @@
+<toolbar></toolbar>
+
+<div class="form-login">
+    <mat-card>
+      <mat-card-title>Login</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="loginForm" fxLayout="column" layout-align="center none">
+          <mat-form-field appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="email" formControlName="email" [errorStateMatcher]="matcher" name="email">
+          </mat-form-field>
+          <mat-form-field appearance="outline" style="margin-bottom: 20px;">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" formControlName="password" [errorStateMatcher]="matcher" name="password">
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit" (click)="onLoginSubmit()">Entrar agora</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+</div>
